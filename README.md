@@ -3,7 +3,7 @@ yii2-jws
 
 An extension to manage signed JWS tokens
 
-This library interfaces
+This library interfaces with
 [namshi/jose](http://github.com/namshi/jose) to generate signed
 [JWS](https://tools.ietf.org/html/rfc7515) tokens.
 
