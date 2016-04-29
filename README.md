@@ -42,7 +42,6 @@ Integration
           
           // The settings below are optional. Defaults will be used if not set here.
           //'encoder' => 'Namshi\JOSE\Base64\Base64UrlSafeEncoder',
-          //'refreshExp' => '24 hours',
           //'exp' => '1 hour',
           //'alg' => 'RS256',
           //'jwsClass' => 'Namshi\JOSE\SimpleJWS',

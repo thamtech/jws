@@ -24,7 +24,6 @@ use yii\helpers\ArrayHelper;
  *       'pubkey' => '@app/config/keys/jwsauth/public.pem',
  *       'pvtkey' => '@app/config/keys/jwsauth/private.pem',
  *       'encoder' => 'Namshi\JOSE\Base64\Base64UrlSafeEncoder',
- *       'refreshExp' => '24 hours',
  *       'exp' => '1 hour',
  *       'alg' => 'RS256',
  *       'jwsClass' => 'Namshi\JOSE\SimpleJWS',
@@ -38,10 +37,13 @@ use yii\helpers\ArrayHelper;
 class JwsManager extends \yii\base\Object
 {
     /**
-     * Period of time for which a token should be refreshable.
+     * Period of time for which a token should be refreshable. This was never
+     * used in this class, and as of v2.0 it is only maintained for backwards
+     * compatibility.
      * 
      * @var string
      * @see http://php.net/manual/en/datetime.formats.php
+     * @deprecated
      */
     public $refreshExp = '24 hours';
     
