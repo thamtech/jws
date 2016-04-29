@@ -161,18 +161,29 @@ class JwsManager extends \yii\base\Object
     /**
      * Generates a new JWS token with the specified payload array.
      * 
-     * @param array $payload
+     * @param array $payload array of keys/values that should be embedded in
+     *     the JWS token.
+     * 
+     * @param boolean|string $expiration Boolean indicates whether or not
+     *     to set an expiration date in the token based on the [[exp]] property.
+     *     Otherwise, a string may be given instead to explicitly set a custom
+     *     expiration. Such a string value should be a valid
+     *     [PHP datetime format](http://php.net/manual/en/datetime.formats.php).
      * 
      * @return string The JWS token string.
      */
-    public function newToken($payload)
+    public function newToken($payload, $expiration = true)
     {
         $jwsClass = $this->jwsClass;
         $jws = new $jwsClass(['alg' => $this->alg]);
         $jws->setEncoder(Yii::createObject($this->encoder));
         
-        if ($this->exp) {
-            $date = new \DateTime($this->exp);
+        if ($expiration === true) {
+            $expiration = $this->exp;
+        }
+        
+        if ($expiration) {
+            $date = new \DateTime($expiration);
             
             $payload = ArrayHelper::merge($payload, [
                 'exp' => $date->format('U'),
