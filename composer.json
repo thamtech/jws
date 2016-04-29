@@ -17,6 +17,6 @@
         "namshi/jose": "^6.0"
     },
     "autoload": {
-        "psr-4": { "thamtech\\jws\\": ""}
+        "psr-4": { "thamtech\\jws\\": "src/"}
     }
 }
