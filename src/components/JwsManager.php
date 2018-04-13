@@ -34,7 +34,7 @@ use yii\helpers\ArrayHelper;
  * 
  * @author Tyler Ham <tyler@thamtech.com>
  */
-class JwsManager extends \yii\base\Object
+class JwsManager extends \yii\base\BaseObject
 {
     /**
      * Period of time for which a token should be refreshable. This was never
