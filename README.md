@@ -4,7 +4,7 @@ yii2-jws
 An extension to manage signed JWS tokens
 
 This library interfaces with
-[namshi/jose](http://github.com/namshi/jose) to generate signed
+[namshi/jose](https://github.com/namshi/jose) to generate signed
 [JWS](https://tools.ietf.org/html/rfc7515) tokens.
 
 For license information check the [LICENSE](LICENSE.md)-file.
@@ -12,7 +12,7 @@ For license information check the [LICENSE](LICENSE.md)-file.
 Installation
 ------------
 
-The preferred way to install this extensions is through [composer](http://getcomposer.org/download/).
+The preferred way to install this extensions is through [composer](https://getcomposer.org/download/).
 
 Either run
 ```
@@ -78,14 +78,14 @@ $result = Yii::$app->jwsManager->isValid($token);
 See Also
 --------
 
-* [cranetm/yii2-json-rpc-2.0](http://github.com/cranetm/yii2-json-rpc-2.0) - Yii 2
+* [cranetm/yii2-json-rpc-2.0](https://github.com/cranetm/yii2-json-rpc-2.0) - Yii 2
   extension that helps turn your Controllers into JSON RPC 2.0 APIs.
   
-* [namshi/jose](http://github.com/namshi/jose) - PHP implementation of the
+* [namshi/jose](https://github.com/namshi/jose) - PHP implementation of the
   JWS (JSON Web Signature) specification.
 
 * [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) - JWT specifications
   
 * [JSON Web Signature (JWS)](https://tools.ietf.org/html/rfc7515) - JWS specifications
 
-* [thamtech/yii2-jsonrpc-jwsauth](http://github.com/thamtech/yii2-jsonrpc-jwsauth)
+* [thamtech/yii2-jsonrpc-jwsauth](https://github.com/thamtech/yii2-jsonrpc-jwsauth)
