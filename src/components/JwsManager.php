@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (c) 2015 Thamtech, LLC
+ * @copyright Copyright (c) 2015-2018 Thamtech, LLC
  * @link http://github.com/thamtech/yii2-jsonrpc-jwsauth
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */
