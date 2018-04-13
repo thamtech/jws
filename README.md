@@ -83,6 +83,8 @@ See Also
   
 * [namshi/jose](http://github.com/namshi/jose) - PHP implementation of the
   JWS (JSON Web Signature) specification.
+
+* [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) - JWT specifications
   
 * [JSON Web Signature (JWS)](https://tools.ietf.org/html/rfc7515) - JWS specifications
 
